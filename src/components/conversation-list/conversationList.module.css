@@ -1,0 +1,129 @@
+.history_loader {
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+
+.margin_auto {
+  margin: auto;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.chat_list_container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.message {
+  padding: 10px;
+  background-color: #ffffff;
+  width: max-content;
+  word-wrap: break-word;
+  max-width: 30vw;
+  text-align: left;
+  font: 400 0.9em 'Open Sans', sans-serif;
+  border-radius: 10px;
+}
+
+.chat_header {
+  margin-bottom: 10px;
+  background: #fbfcf8;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.container_border {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: auto;
+  justify-content: flex-end;
+}
+
+.scroll {
+  overflow: auto;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.btn_arrow {
+  background: transparent;
+  border: none;
+}
+
+.active_user {
+  background: lightblue;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.input_message {
+  padding: 4px;
+}
+
+.bg {
+  background-color: rgb(255, 255, 255);
+}
+
+.arrow_img {
+  height: 30px;
+}
+
+.row {
+  align-items: flex-start !important;
+  margin-top: 0px !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* @media screen and (max-width: 480px) { */
+@media screen and (max-width: 660px) {
+  .chat_list_container {
+    height: 50vh;
+    overflow: auto;
+  }
+}
